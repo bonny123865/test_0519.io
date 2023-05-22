@@ -13,12 +13,91 @@
 </head>
 
 <body>
-	<button  onclick = "change_mode()">Change mode</button>
-    <h2>學校資料表</h2>
-    <button type="button" onclick="loadDoc()">Show the content</button>
-    <br><br>
+	<center>
+		<p id="top_line">You can press the button to change the background color</p>
+		<button  class="Button_set" onclick = "change_mode()">Change mode</button>
+	</center>
 
-    <table id="example"></table>
+	<div>
+		<h2 class="header">個人基本資料表</h2>
+		<table class="hover_table">
+			<tr>
+				<th>姓名</th>
+				<th>吳孟璇</th>
+			</tr>
+			<tr>
+				<th>性別</th>
+				<th>女</th>
+			</tr>
+			<tr>
+				<th>居住城市</th>
+				<th>桃園市桃園區</th>
+			</tr>
+			<tr>
+				<th>就讀系級</th>
+				<th>資訊管理系二年級</th>
+			</tr>
+			<tr>
+				<th>學號</th>
+				<th>110403531</th>
+			</tr>
+		</table>
+		<hr>
+	</div>
+
+
+
+	<div>
+		<h2 class="header">大學課程修習</h2>
+		<ol>
+			<li><strong>主修</strong> : 資訊管理系</li>
+			<li><strong>輔修</strong> : 財務金融學系</li>
+			<li><strong>學分學程</strong> : 會計、金融科技、人工智慧跨域應用</li>
+		</ol>
+		<hr>
+	</div>
+
+
+
+	<div>
+		<h2 class="header">學經歷資料表</h2>
+		<button class="Button_set" type="button" onclick="loadDoc()">Show the content</button>
+		<br><br>
+		<table class="hover_table" id="example"></table>
+		<hr>
+	</div>
+
+
+	<div>
+		<h2 class="header">推薦小說</h2>
+		<table class="img_table">
+			<tr>
+				<th>書名</th>
+				<th>反轉</th>
+				<th>告白</th>
+				<th>惡意</th>
+			</tr>
+			<tr>
+				<th>封面照</th>
+				<th><img class="img_mode" src="./img/novel_1.jpg" alt="It's a picture about the novel."></th>
+				<th><img class="img_mode" src="./img/novel_2.jpg" alt="It's a picture about the novel."></th>
+				<th><img class="img_mode" src="./img/novel_3.jpg" alt="It's a picture about the novel."></th>
+			</tr>
+			<tr>
+				<th>介紹網址</th>
+				<th><a href="https://zh.wikipedia.org/zh-tw/%E5%8F%8D%E8%BD%89" target="_blank">維基百科:反轉</a></th>
+				<th><a href="https://zh.wikipedia.org/zh-tw/%E5%91%8A%E7%99%BD_(%E5%B0%8F%E8%AA%AA)" target="_blank">維基百科:告白</a></th>
+				<th><a href="https://zh.wikipedia.org/zh-tw/%E6%83%A1%E6%84%8F_(%E5%B0%8F%E8%AA%AA)" target="_blank">維基百科:惡意</a></th>
+			</tr>
+
+		</table>
+		<hr>
+	</div>
+
+
+
+
+
 
     <script>
         function loadDoc() {
@@ -49,6 +128,7 @@
                 }
 
             document.getElementById("example").innerHTML = table;
+			
         }
     </script>
 </body>

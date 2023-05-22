@@ -1,23 +1,68 @@
-table, th, td {
-	border : 3px solid #25556A;
-	border-collapse : collapse;
+.hover_table tr:hover {
+	background-color: rgba(197, 197, 197, 0.3) !important;
+	font-size: 110% ;
+}
+#top_line {
+	color: rgb(39, 96, 149);
+	height: 5px;
+	width: 100%;
+	font-style: italic;	
+	padding: 10px;
+}
+table {
+	border: 3px solid black;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #F5F5F5;
 }
 
 th, td {
-	padding : 10px;
+	border: 3px solid black;
+	text-align: center;
+	padding: 10px;
 }
 
-body {						
-	font-size : 24px;
-	padding : 24px;
+hr {
+	color: rgb(39, 96, 149);
+	height: 5px;
+	width: 100%;
+	border: none;
+	background-color: rgb(39, 96, 149);
+}
+
+.header {
+	font-size: 30px;
+	color: rgb(39, 96, 149);
+}
+
+.Button_set {
+	font-size: 15px;
+	background-color: rgb(39, 96, 149);
+	color: white;
+	font-family: "Courier New", monospace;
+}
+
+body {
+	font-size: 20px;
+	padding: 24px;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(190, 163, 125));
-
-
-	background-size: 100vw 100vh;
-	color : black;
+	background-size: 100vw 200vh;
+	color: black;
 }
-.change_mode {			
-	background: -webkit-linear-gradient(-10deg, rgb(123, 156, 189),rgb(225, 232, 242));
-	background-size: 100vw 100vh;
-	color : white;
+
+.change_mode {
+	background: -webkit-linear-gradient(-10deg, rgb(164, 193, 223), rgb(225, 232, 242));
+	background-size: 100vw 200vh;
+	color: rgb(93, 93, 93);
 }
+
+::selection{
+	color: rgb(255, 255, 251);
+	background: rgb(118, 118, 118);
+}
+.img_table img {
+	border-radius: 20px;
+	max-width: 150px;
+	max-height: 150px;
+	margin: 0 auto;
+  }
