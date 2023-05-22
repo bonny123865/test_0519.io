@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA_ROOT>
+    <DATA>
+        <AGE>2009-2015</AGE>
+        <SCHOOL_NAME>大勇國小</SCHOOL_NAME>
+        <SCHOOL_ADDRESS>334桃園市八德區自強街60號</SCHOOL_ADDRESS>
+    </DATA>
+
+    <DATA>
+        <AGE>2015-2018</AGE>
+        <SCHOOL_NAME>建國國中</SCHOOL_NAME>
+        <SCHOOL_ADDRESS>330桃園市桃園區介新街20號</SCHOOL_ADDRESS>
+    </DATA>
+    <DATA>
+        <AGE>2018-2021</AGE>
+        <SCHOOL_NAME>永豐高中</SCHOOL_NAME>
+        <SCHOOL_ADDRESS>334桃園市八德區永豐路609號</SCHOOL_ADDRESS>
+    </DATA>
+    <DATA>
+        <AGE>202109-就讀中</AGE>
+        <SCHOOL_NAME>中央大學</SCHOOL_NAME>
+        <SCHOOL_ADDRESS>320桃園市中壢區中大路300號</SCHOOL_ADDRESS>
+    </DATA>
+</DATA_ROOT>

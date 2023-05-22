@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CH6_17_send.html</title>
+    <link rel="stylesheet" href="test0522_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap">
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: 'Noto Serif TC', serif;
+        }
+    </style>
+</head>
+
+<body>
+	<button  onclick = "change_mode()">Change mode</button>
+    <h2>學校資料表</h2>
+    <button type="button" onclick="loadDoc()">Show the content</button>
+    <br><br>
+
+    <table id="example"></table>
+
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.onload = function() {
+                Fun(this);
+            }
+
+            xhttp.open("GET", "test0522.xml");
+            xhttp.send();
+        }
+		function change_mode() {
+				var element = document.body;
+				element.classList.toggle("change_mode");
+			}
+        function Fun(xml) {
+            const xmlDoc = xml.responseXML;
+            const data = xmlDoc.getElementsByTagName("DATA");
+            let table = "<tr><th>就讀年分</th><th>校名</th><th>地址</th></tr>";
+
+                for (let i = 0; i < data.length; i++) {
+                    const age = data[i].getElementsByTagName("AGE")[0].textContent;
+                    const schoolName = data[i].getElementsByTagName("SCHOOL_NAME")[0].textContent;
+                    const schoolAddress = data[i].getElementsByTagName("SCHOOL_ADDRESS")[0].textContent;
+
+                    table += "<tr><td>" + age + "</td><td>" + schoolName + "</td><td>" + schoolAddress + "</td></tr>";
+                }
+
+            document.getElementById("example").innerHTML = table;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>		CH5_44_toggle	</title>
+		<style>
+			body {						
+				font-size : 24px;
+				padding : 24px;
+				background-color : white;
+				color : black;
+			}
+			.dark {						
+				background-color : black;
+				color : white;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<button  onclick = "myFun()">Change mode	</button>
+		</div>
+		<script>
+			function myFun() {
+				var element = document.body;
+				element.classList.toggle("dark");
+			}
+		</script>
+	</body>
+</html>
+
