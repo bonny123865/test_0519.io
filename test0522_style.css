@@ -46,7 +46,8 @@ body {
 	font-size: 20px;
 	padding: 24px;
 	background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(190, 163, 125));
-	background-size: 100vw 200vh;
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
 	color: black;
 }
 
